@@ -1,8 +1,8 @@
-# Amplify AI Kit Samples
+# Amplify AI Samples
 
 ## Getting Started
 
-All of these samples use the Amplify AI kit. To run these samples you will need an AWS account with AWS Amplify set up and access to Bedrock models in the region you want to deploy in.
+All of these samples use the Amplify AI. To run these samples you will need an AWS account with AWS Amplify set up and access to Bedrock models in the region you want to deploy in.
 
 ## Running the samples
 
