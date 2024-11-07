@@ -6,7 +6,6 @@ import {
   Menu,
   MenuButton,
   MenuItem,
-  Text,
   TextField,
   View,
 } from "@aws-amplify/ui-react";
