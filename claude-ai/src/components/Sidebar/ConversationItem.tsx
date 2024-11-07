@@ -20,6 +20,7 @@ import {
 
 import { ConversationsContext } from "@/providers/ConversationsProvider";
 import { Conversation } from "@/client";
+import Link from "next/link";
 
 interface FormElements extends HTMLFormControlsCollection {
   conversationName: HTMLInputElement;
@@ -76,9 +77,9 @@ export const ConversationItem = ({
             />
           </View>
         ) : (
-          <>
-            <Text>{conversation.name ?? conversation.id}</Text>
-          </>
+          <Link href={`/chat/${conversation.id}`}>
+            {conversation.name ?? conversation.id}
+          </Link>
         )}
       </Flex>
       <Menu

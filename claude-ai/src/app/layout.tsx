@@ -1,14 +1,14 @@
 import { cookies } from "next/headers";
-import { ConfigureAmplify } from "./ConfigureAmplify";
 import { ColorMode } from "@aws-amplify/ui-react";
-import { theme } from "@/theme";
 import { ThemeStyle } from "@aws-amplify/ui-react/server";
+import { ConfigureAmplify } from "./ConfigureAmplify";
+import { theme } from "@/theme";
 import { Layout } from "@/components/Layout";
 import { Sidebar } from "@/components/Sidebar";
 import { CreateChat } from "@/components/Sidebar/CreateChat";
 import ThemeToggle from "@/components/ThemeToggle";
-import "./globals.css";
 import { LogoutButton } from "@/components/Sidebar/Logout";
+import "./globals.css";
 
 export default function RootLayout({
   children,

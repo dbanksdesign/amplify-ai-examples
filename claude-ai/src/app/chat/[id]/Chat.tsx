@@ -19,6 +19,7 @@ export const Chat = ({ id }: { id: string }) => {
   return (
     <View padding="large" flex="1">
       <AIConversation
+        allowAttachments
         messages={messages}
         handleSendMessage={(message) => {
           sendMessage(message);
