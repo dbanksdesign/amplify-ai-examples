@@ -41,6 +41,18 @@ export const Chat = ({ id }: { id: string }) => {
         messageRenderer={{
           text: ({ text }) => <ReactMarkdown>{text}</ReactMarkdown>,
         }}
+        responseComponents={{
+          WeatherCard: {
+            description: "Used to display the weather of a given city",
+            component: ({ city }) => <View>Weather for {city}</View>,
+            props: {
+              city: {
+                type: "string",
+                description: "The city to display the weather for",
+              },
+            },
+          },
+        }}
       />
     </View>
   );
